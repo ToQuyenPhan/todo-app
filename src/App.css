@@ -132,3 +132,7 @@ h1 {
     margin-right: 10px;
     color: #fff;
 }
+
+span:hover{
+    cursor: pointer;
+}

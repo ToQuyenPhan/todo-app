@@ -17,13 +17,13 @@ function Todo({ todos, completeTodo, removeTodo, editTodo }) {
     }
 
     if(editing.id){
-        return <TodoForm edit={editing} onSubmit={handleSubmit} />
+        return <TodoForm editing={editing} onSubmit={handleSubmit} />
     }
 
     return todos.map((todo, index) => (
         <div key={index} className={todo.isCompleted ? 'todo-row complete' : 'todo-row'}>
             <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-                {todo.text}
+                <span>{todo.text}</span>
             </div>
             <div className='icons'>
                 <FiEdit3 className='edit-icon' onClick={() => setEditing({id: todo.id, value: todo.text})}/>
