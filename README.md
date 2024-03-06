@@ -25,7 +25,7 @@
 To run this project, install it locally using npm:
 
 ```
-$ cd ../react-sidebar
+$ cd ../todo-app
 $ npm install
 $ npm start
 ```
